@@ -20,7 +20,7 @@
     <!-- NAV -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"><img src="./images/logoAndinaBlanco.png" class="logoNav" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,10 +30,21 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#sobrenosotros">Sobre Nosotros</a>
+              <a class="nav-link" href="#sobreNosotros">Sobre Nosotros</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#excursiones">Excursiones</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#excursiones" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Excursiones
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li><a class="dropdown-item" href="#excursiones">Excursiones</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./pages/martial.html">Glaciar Martial</a></li>
+                <li><a class="dropdown-item" href="./pages/vicinguerra.html">Glaciar Vicinguerra</a></li>
+                <li><a class="dropdown-item" href="./pages/ojoDelAlbino.html">Glaciar Ojo del Albino</a></li>
+                <li><a class="dropdown-item" href="./pages/lagunaEsmeralda.html">Laguna Esmeralda</a></li>
+                <li><a class="dropdown-item" href="./pages/excursionesNocturnas.html">Excursiones Nocturnas</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#galeria">Galería</a>
@@ -75,7 +86,7 @@
     <div class="container marketing">
 
         <!-- Three columns of text below the carousel -->
-        <div class="row text-center fetures__sup" id="sobrenosotros">
+        <div class="row text-center fetures__sup" id="sobreNosotros">
           <div class="col-lg-4 mb-5">
             <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="./images/defensa.png" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect></svg>
     
@@ -151,10 +162,11 @@
       </div>
 
     <!-- EXCURSIONES -->
-      <div class="container px-4 py-5" id="custom-cards">
+      <div class="container px-4 py-5" id="excursiones">
         <h2 class="pb-2 d-flex justify-content-center fuentePrincipal" id="excursiones">Excursiones</h2>
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" id="glaciarMartial">
           <div class="col-md-6">
+            <a href="./pages/martial.html">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg excursiones__bg" style="background-image: url('./images/v20220130_112035.jpg');">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold position-relative">Glaciar Martial</h2>
@@ -173,30 +185,36 @@
                 </ul>
               </div>
             </div>
+          </a>
           </div>
+
+          
     
           <div class="col-md-6" id="glaciarVinciguerra">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg excursiones__bg" style="background-image: url('./images/GlaciarVinciguerra/Vinciguerra19.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold position-relative">Glaciar Vinciguerra</h2>
-                <ul class="d-flex list-unstyled mt-auto position-relative">
-                  <li class="me-auto">
-                    <img src="images\v20220502_113354.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small>Dificultad: Media / Alta</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small>7hs</small>
-                  </li>
-                </ul>
+            <a href="./pages/vicinguerra.html">
+              <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg excursiones__bg" style="background-image: url('./images/GlaciarVinciguerra/Vinciguerra19.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold position-relative">Glaciar Vinciguerra</h2>
+                  <ul class="d-flex list-unstyled mt-auto position-relative">
+                    <li class="me-auto">
+                      <img src="images\v20220502_113354.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                      <small>Dificultad: Media / Alta</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                      <small>7hs</small>
+                    </li>
+                  </ul>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
     
           <div class="col-md-6" id="glaciarOjoAlbino">
+            <a href="./pages/ojoDelAlbino.html">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg excursiones__bg" style="background-image: url('./images/LagunaEsmeralda/lagunaEsmeralda3.jpg'); background-position: 0% 50%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold position-relative">Laguna Esmeralda</h2>
@@ -215,9 +233,11 @@
                 </ul>
               </div>
             </div>
+          </a>
           </div>
 
-          <div class="col-md-6" id="glaciar">
+          <div class="col-md-6" id="glaciarOjoAlbino">
+            <a href="./pages/ojoDelAlbino.html">
             <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg excursiones__bg" style="background-image: url('./images/ojoDelAlbino/IMG-20210131-WA0010.jpg'); background-position: 0% 70%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold position-relative">Glaciar Ojo del Albino</h2>
@@ -236,10 +256,12 @@
                 </ul>
               </div>
             </div>
+            </a>
           </div>
 
           <div class="col-12" id="excursionesNocturnas">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg excursiones__bg" style="background-image: url('./images/Francoise_gervaisDSC_6695-sm.webp'); background-position: 0% 60%;">
+            <a href="./pages/excursionesNocturnas.html">
+            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg excursiones__bg" style="background-image: url('./images/noche/aurora2.webp'); background-position: 0% 60%;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
                 <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold position-relative">Excursiones Nocturnas</h2>
                 <ul class="d-flex list-unstyled mt-auto position-relative">
@@ -257,6 +279,7 @@
                 </ul>
               </div>
             </div>
+            </a>
           </div>
         </div>
       </div>
@@ -445,7 +468,7 @@
                 </div> -->
               </div>
             </div>
-          </div>
+          </div>  
         </div>
 
         
@@ -492,7 +515,7 @@
 
     
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=51955081075&text=Glaciar%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+<a href="https://wa.me/message/I2YUHOJ6JKRWI1" class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
 </a>
 
